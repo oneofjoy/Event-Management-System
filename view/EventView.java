@@ -3,7 +3,6 @@ package view;
 public class EventView {
 
     public void showMenu() {
-
         System.out.println("===== EVENT MENU =====");
         System.out.println("1. Create Event");
         System.out.println("2. Show Events");
@@ -11,7 +10,6 @@ public class EventView {
     }
 
     public void eventCreated() {
-
         System.out.println("Event Created");
     }
 }
