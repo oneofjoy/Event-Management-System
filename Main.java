@@ -1,4 +1,5 @@
 import controller.AuthController;
+import controller.EventController;
 import data.DataStore;
 import model.User;
 
@@ -11,6 +12,7 @@ public class Main {
             new User("admin", "123", "ADMIN")
         );
 
+        
         AuthController authController = new AuthController();
 
         User loginUser = authController.login();
@@ -21,5 +23,9 @@ public class Main {
                 "Welcome " + loginUser.getUsername()
             );
         }
+
+        EventController eventController = new EventController();
+
+        eventController.menu();
     }
 }
